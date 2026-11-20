@@ -1,237 +1,200 @@
 
-
 <!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
- <meta name="google-site-verification" content="e50r-NGy3uNmoCwGl239hX7adZNFeQDwDZFx-px7XgQ" />
- <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta name="description" content="جمعية الأخوة والتسامح للعمل الخيري - جرش، الأردن">
-  <title>جمعية الأخوة والتسامح للعمل الخيري</title>
-  <style>
-    * { box-sizing: border-box; }
-    body {
-      margin: 0;
-      font-family: Tahoma, Arial, sans-serif;
-      line-height: 1.9;
-      color: #26352d;
-      background: #f5f7f4;
-    }
-    header {
-      background: linear-gradient(135deg, #174b38, #287653);
-      color: white;
-      text-align: center;
-      padding: 38px 15px;
-    }
-    .symbol {
-      font-size: 55px;
-      margin-bottom: 5px;
-    }
-    header h1 {
-      margin: 5px 0;
-      font-size: 27px;
-    }
-    header p { margin: 5px; color: #e5f3e9; }
-    nav {
-      background: #123b2d;
-      padding: 12px 8px;
-      text-align: center;
-      position: sticky;
-      top: 0;
-      z-index: 10;
-    }
-    nav a {
-      color: white;
-      text-decoration: none;
-      margin: 5px 9px;
-      font-size: 14px;
-      display: inline-block;
-    }
-    .hero {
-      text-align: center;
-      padding: 48px 18px;
-      background: #e6f0e8;
-    }
-    .hero h2 { color: #174b38; font-size: 26px; }
-    .hero p { max-width: 700px; margin: auto; }
-    .container {
-      max-width: 950px;
-      margin: auto;
-      padding: 25px 16px;
-    }
-    .card {
-      background: white;
-      padding: 24px;
-      margin: 18px 0;
-      border-radius: 13px;
-      box-shadow: 0 3px 12px #0000000d;
-    }
-    h2 { color: #216044; }
-    .items {
-      padding-right: 22px;
-    }
-    .items li { margin: 8px 0; }
-    .donation {
-      background: #eaf3ec;
-      border: 1px solid #c8ddce;
-      text-align: center;
-    }
-    .iban {
-      direction: ltr;
-      display: block;
-      background: white;
-      padding: 13px 8px;
-      border-radius: 8px;
-      font-weight: bold;
-      overflow-wrap: anywhere;
-      margin: 15px 0;
-    }
-    .button {
-      display: inline-block;
-      padding: 10px 20px;
-      margin: 5px;
-      border-radius: 7px;
-      background: #24734e;
-      color: white;
-      text-decoration: none;
-    }
-    .contact p { margin: 8px 0; }
-    a { color: #216044; }
-    footer {
-      background: #123b2d;
-      color: white;
-      text-align: center;
-      padding: 22px 12px;
-      margin-top: 25px;
-    }
-    footer p { margin: 4px; }
-    @media (max-width: 600px) {
-      header h1 { font-size: 22px; }
-      nav a { margin: 4px; font-size: 12px; }
-      .card { padding: 17px; }
-    }
-  </style>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="description" content="جمعية الأخوة والتسامح للعمل الخيري في الأردن">
+<title>جمعية الأخوة والتسامح للعمل الخيري</title>
+
+<style>
+*{box-sizing:border-box}
+html{scroll-behavior:smooth}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f7f9f7;color:#26352d;line-height:1.9}
+header{background:#075b43;color:white;text-align:center;padding:30px 15px}
+.logo{width:105px;height:105px;border:3px solid #d9bd70;border-radius:50%;margin:0 auto 12px;display:flex;align-items:center;justify-content:center;font-size:48px;background:white;color:#075b43}
+header h1{margin:5px;font-size:27px}
+header p{color:#e9dfb9;margin:5px}
+nav{background:#064632;padding:13px;text-align:center;position:sticky;top:0;z-index:10}
+nav a{color:white;text-decoration:none;margin:0 9px;font-size:14px;display:inline-block}
+.hero{background:linear-gradient(120deg,#075b43,#168263);color:white;text-align:center;padding:65px 20px}
+.hero h2{font-size:30px;margin:0 0 15px}
+.hero p{max-width:700px;margin:auto}
+.btn{display:inline-block;background:#d8b65c;color:#163b2d;padding:12px 25px;border-radius:8px;text-decoration:none;font-weight:bold;margin:18px 5px}
+section{padding:45px 18px;max-width:1050px;margin:auto}
+.section-title{text-align:center;color:#075b43;margin-bottom:25px}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:18px}
+.card{background:white;padding:23px;border-radius:12px;box-shadow:0 3px 15px #0000000c;text-align:center}
+.card .emoji{font-size:36px}
+.card h3{color:#075b43}
+.about{text-align:center;max-width:800px;margin:auto}
+.donation{background:#eaf3ed;border-radius:15px;padding:25px;text-align:center}
+.iban{background:white;padding:15px;border:1px dashed #075b43;border-radius:8px;font-size:17px;direction:ltr;overflow-wrap:anywhere;font-weight:bold}
+.copy{background:#075b43;color:white;border:0;padding:12px 24px;border-radius:7px;cursor:pointer;margin:12px}
+.contact-banner{background:#075b43;color:white;text-align:center;padding:35px 15px}
+.contact-banner a{color:#f5d77d;text-decoration:none}
+.card a{color:#075b43;font-weight:bold}
+footer{background:#043b2c;color:white;text-align:center;padding:17px;font-size:13px}
+@media(max-width:600px){
+header h1{font-size:22px}
+.hero h2{font-size:25px}
+nav a{margin:4px;font-size:13px}
+}
+</style>
 </head>
+
 <body>
 
-
-<div class="contact-box">
-  <p><strong>اسم الجمعية:</strong> جمعية الأخوة والتسامح للعمل الخيري</p>
-  <p><strong>العنوان:</strong> جرش – الجبارات – الأردن</p>
-
-  <p><strong>رقم المتطوع:</strong> 0789968004</p>
-  <a class="button button-green"
-     href="https://wa.me/962789968004"
-     target="_blank" rel="noopener">
-    واتساب المتطوع
-  </a>
-
-  <p><strong>رقم الجمعية:</strong> 0772335460</p>
-  <a class="button button-gold" href="tel:0772335460">
-    الاتصال بالجمعية
-  </a>
-
-  <p style="margin-top:15px;">
-    <a href="mailto:brotherhoodandtoleranceassocia@gmail.com"
-       style="color:#145b43;">
-      brotherhoodandtoleranceassocia@gmail.com
-    </a>
-  </p>
-</div>
-
+<header>
+<div class="logo">🤝</div>
+<h1>جمعية الأخوة والتسامح للعمل الخيري</h1>
+<p>معاً من أجل الإنسان... ومعاً لصناعة الأمل</p>
+</header>
 
 <nav>
-  <a href="#home">الرئيسية</a>
-  <a href="#about">عن الجمعية</a>
-  <a href="#goals">أهدافنا</a>
-  <a href="#work">أعمالنا</a>
-  <a href="#donate">التبرعات</a>
-  <a href="#contact">اتصل بنا</a>
+<a href="#home">الرئيسية</a>
+<a href="#about">من نحن</a>
+<a href="#goals">أهدافنا</a>
+<a href="#projects">أنشطتنا</a>
+<a href="#donate">التبرعات</a>
+<a href="#contact">اتصل بنا</a>
 </nav>
 
-<section class="hero" id="home">
-  <h2>الخير يجمعنا والتسامح رسالتنا</h2>
-  <p>
-    نعمل من أجل خدمة المجتمع ومساندة الأسر المحتاجة،
-    ونؤمن بأن التعاون والتكافل أساس بناء مجتمع أفضل.
-    مساهمتكم تصنع فرقاً في حياة الآخرين.
-  </p>
-  <a class="button" href="#donate">ساهم في دعم الجمعية</a>
+<div class="hero" id="home">
+<h2>الخير يجمعنا والتسامح رسالتنا</h2>
+<p>
+نعمل على تعزيز التكافل الاجتماعي ومساعدة الأسر المحتاجة
+وتقديم الدعم الإنساني للمجتمع، ونؤمن بأن العطاء مسؤولية
+إنسانية تجمعنا جميعاً.
+</p>
+<a class="btn" href="#donate">ساهم في الخير</a>
+<a class="btn" href="#contact">تواصل معنا</a>
+</div>
+
+<section id="about">
+<h2 class="section-title">من نحن</h2>
+<div class="about">
+<p>
+جمعية الأخوة والتسامح للعمل الخيري جمعية تهدف إلى خدمة المجتمع
+وتعزيز قيم الأخوة والتراحم والتعاون بين أفراده.
+نسعى إلى تنفيذ المبادرات الإنسانية والخيرية ومساندة الأسر
+المحتاجة والعمل على نشر ثقافة التطوع والعطاء.
+</p>
+<strong>جمعية مسجلة رسمياً في الأردن.</strong>
+</div>
 </section>
 
-<main class="container">
+<section id="goals">
+<h2 class="section-title">أهداف الجمعية</h2>
+<div class="cards">
+<div class="card"><div class="emoji">❤️</div><h3>مساعدة المحتاجين</h3><p>مساندة الأسر الفقيرة وتوفير الدعم الإنساني.</p></div>
+<div class="card"><div class="emoji">🍲</div><h3>المساعدات الغذائية</h3><p>المساهمة في توفير الاحتياجات الغذائية الأساسية.</p></div>
+<div class="card"><div class="emoji">📚</div><h3>دعم التعليم</h3><p>مساندة الطلبة وتشجيع التعليم والتعلم.</p></div>
+<div class="card"><div class="emoji">🤝</div><h3>العمل التطوعي</h3><p>تشجيع المشاركة المجتمعية والعمل التطوعي.</p></div>
+<div class="card"><div class="emoji">🏥</div><h3>الدعم الإنساني</h3><p>المساهمة في المبادرات الصحية والإنسانية.</p></div>
+<div class="card"><div class="emoji">🌍</div><h3>التكافل الاجتماعي</h3><p>نشر المحبة والتسامح والتعاون بين الجميع.</p></div>
+</div>
+</section>
 
-  <section class="card" id="about">
-    <h2>من نحن</h2>
-    <p>
-      جمعية الأخوة والتسامح للعمل الخيري جمعية تعمل في المجال
-      الخيري والإنساني، وتسعى إلى تعزيز روح التعاون والتكافل
-      بين أفراد المجتمع، وتقديم الدعم والمساعدة للفئات المحتاجة
-      وفق إمكانيات الجمعية وأهدافها.
-    </p>
-  </section>
+<section id="projects">
+<h2 class="section-title">أنشطة ومبادرات الجمعية</h2>
+<div class="cards">
+<div class="card">
+<div class="emoji">🧺</div>
+<h3>طرود الخير</h3>
+<p>مبادرات لتوفير المواد الغذائية للأسر المحتاجة.</p>
+</div>
+<div class="card">
+<div class="emoji">👨‍👩‍👧‍👦</div>
+<h3>رعاية الأسر</h3>
+<p>المساهمة في تخفيف الأعباء المعيشية عن الأسر.</p>
+</div>
+<div class="card">
+<div class="emoji">🎁</div>
+<h3>حملات العطاء</h3>
+<p>تنظيم حملات خيرية وتطوعية لخدمة المجتمع.</p>
+</div>
+</div>
+</section>
 
-  <section class="card" id="goals">
-    <h2>أهداف الجمعية</h2>
-    <ul class="items">
-      <li>مساعدة الأسر الفقيرة والمحتاجة.</li>
-      <li>تقديم المساعدات الإنسانية والاجتماعية.</li>
-      <li>توزيع المساعدات العينية على المستحقين.</li>
-      <li>تعزيز قيم الأخوة والتسامح والتكافل.</li>
-      <li>التعاون مع المؤسسات والجمعيات الخيرية.</li>
-      <li>دعم المبادرات والأنشطة المجتمعية.</li>
-    </ul>
-  </section>
+<section id="donate">
+<h2 class="section-title">ساهم في دعم أعمال الجمعية</h2>
+<div class="donation">
+<h3>حساب التبرعات البنكي</h3>
+<p>يمكنكم دعم أنشطة الجمعية من خلال التحويل البنكي:</p>
+<p><strong>اسم الجمعية:</strong> جمعية الأخوة والتسامح</p>
+<p><strong>رقم IBAN:</strong></p>
+<div class="iban" id="iban">JO82JIBA0740002192879410400002</div>
+<button class="copy" onclick="copyIban()">نسخ رقم الحساب</button>
+<p id="message" aria-live="polite"></p>
+<p>نشكركم على دعمكم ومساهمتكم في أعمال الخير.</p>
+</div>
+</section>
 
-  <section class="card" id="work">
-    <h2>مجالات العمل الخيري</h2>
-    <ul class="items">
-      <li>المساعدات الغذائية والتموينية.</li>
-      <li>المساعدات النقدية للأسر المستحقة.</li>
-      <li>الملابس والاحتياجات الأساسية.</li>
-      <li>المبادرات التطوعية والإنسانية.</li>
-      <li>التنسيق مع الجهات الداعمة وأهل الخير.</li>
-    </ul>
-  </section>
+<section id="contact">
+<h2 class="section-title">تواصل معنا</h2>
+<div class="cards">
 
-  <section class="card donation" id="donate">
-    <h2>ساهم في دعم أعمال الجمعية</h2>
-    <p>
-      تبرعكم يساعد الجمعية على مواصلة رسالتها الإنسانية
-      والوصول إلى الأسر والأشخاص المحتاجين.
-    </p>
-    <h3>بيانات الحساب البنكي – IBAN</h3>
-    <span class="iban">JO82JIBA0740002192879410400002</span>
-    <p>يرجى التأكد من بيانات الحساب قبل تحويل أي تبرع.</p>
-    <a class="button" href="mailto:brotherhoodandtoleranceassocia@gmail.com">
-      التواصل بشأن التبرع
-    </a>
-  </section>
+<div class="card">
+<div class="emoji">👤</div>
+<h3>رئيس الجمعية</h3>
+<p dir="ltr">0772335460</p>
+<a href="tel:0772335460">اتصل برئيس الجمعية</a>
+<br>
+<a href="https://wa.me/962772335460">واتساب رئيس الجمعية</a>
+</div>
 
-  <section class="card contact" id="contact">
-    <h2>تواصل معنا</h2>
-    <p><strong>اسم الجمعية:</strong> جمعية الأخوة والتسامح للعمل الخيري</p>
-    <p><strong>العنوان:</strong> جرش – الجبارات، الأردن</p>
-    <p><strong>رقم الجمعية:</strong>
-      <a href="tel:0772335460" dir="ltr">0772335460</a>
-    </p>
-    <p><strong>رقم المتطوع:</strong>
-      <a href="tel:0789968004" dir="ltr">0789968004</a>
-    </p>
-    <p><strong>البريد الإلكتروني:</strong>
-      <a href="mailto:brotherhoodandtoleranceassocia@gmail.com">
-        brotherhoodandtoleranceassocia@gmail.com
-      </a>
-    </p>
-  </section>
+<div class="card">
+<div class="emoji">🤝</div>
+<h3>المتطوع</h3>
+<p dir="ltr">0789968004</p>
+<a href="tel:0789968004">اتصل بالمتطوع</a>
+<br>
+<a href="https://wa.me/962789968004">واتساب المتطوع</a>
+</div>
 
-</main>
+<div class="card">
+<div class="emoji">📍</div>
+<h3>عنوان الجمعية</h3>
+<p>الأردن – جرش – الجبارات</p>
+</div>
+
+</div>
+</section>
+
+<div class="contact-banner">
+<h2>كن سبباً في رسم ابتسامة</h2>
+<p>يداً بيد نبني مجتمعاً أكثر ترابطاً ورحمة.</p>
+<a href="https://wa.me/962772335460">تواصل مع رئيس الجمعية</a>
+</div>
 
 <footer>
-  <p>جمعية الأخوة والتسامح للعمل الخيري</p>
-  <p>جرش – الجبارات، الأردن</p>
-  <p>جميع الحقوق محفوظة © 2026</p>
+<p>جميع الحقوق محفوظة © 2026</p>
+<p>جمعية الأخوة والتسامح للعمل الخيري</p>
+<p>الأردن – جرش – الجبارات</p>
 </footer>
+
+<script>
+function copyIban(){
+const iban=document.getElementById("iban").innerText;
+if(navigator.clipboard && window.isSecureContext){
+navigator.clipboard.writeText(iban).then(()=>{
+document.getElementById("message").innerText="تم نسخ رقم الحساب بنجاح";
+}).catch(()=>fallbackCopy(iban));
+}else{
+fallbackCopy(iban);
+}
+}
+function fallbackCopy(iban){
+const el=document.createElement("textarea");
+el.value=iban;
+document.body.appendChild(el);
+el.select();
+document.execCommand("copy");
+el.remove();
+document.getElementById("message").innerText="تم نسخ رقم الحساب";
+}
+</script>
 
 </body>
 </html>
