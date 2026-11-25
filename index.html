@@ -1,67 +1,133 @@
-<!doctype html>
+
+<!DOCTYPE html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="utf-8">
-<meta name="viewport" content="width=device-width,initial-scale=1">
-<title>عارض كود موقع جمعية الأخوة والتسامح</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>جمعية الأخوة والتسامح للعمل الخيري</title>
+<meta name="description" content="جمعية الأخوة والتسامح للعمل الخيري في جرش الأردن. نعمل على تعزيز التكافل والتعاون ومساعدة الأسر المحتاجة.">
+<meta name="robots" content="index, follow">
+<link rel="canonical" href="https://brotherhoodandtoleranceassocia-commits.github.io/brotherhood-tolerance/">
+<meta property="og:title" content="جمعية الأخوة والتسامح للعمل الخيري">
+<meta property="og:description" content="معًا نصنع الخير ونزرع الأمل">
+<meta property="og:type" content="website">
+<meta name="theme-color" content="#176b50">
 <style>
-:root{color-scheme:dark}
 *{box-sizing:border-box}
-body{margin:0;background:#101820;color:#e8eef2;font-family:Tahoma,Arial,sans-serif}
-header{padding:18px;background:#176b50;color:white}
-h1{font-size:20px;margin:0 0 8px}
-p{margin:6px 0;line-height:1.7}
-.actions{display:flex;gap:10px;flex-wrap:wrap;padding:14px}
-button{border:0;border-radius:8px;padding:11px 16px;background:#e6b85c;color:#17231e;font-weight:bold}
-#status{padding:0 14px;color:#c9d7df}
-pre{direction:ltr;text-align:left;white-space:pre;overflow:auto;margin:14px;padding:16px;background:#071018;border:1px solid #30424e;border-radius:10px;line-height:1.55;font:13px/1.55 Consolas,Monaco,monospace;tab-size:2}
-.tag{color:#ff8f8f}.attr{color:#ffd479}.str{color:#a8e6a1}.comment{color:#8296a5;font-style:italic}.kw{color:#d5a6ff}.plain{color:#e8eef2}
+body{margin:0;font-family:Tahoma,Arial,sans-serif;background:#f7f7f1;color:#26352c;line-height:1.9}
+header{background:#176b50;color:white;text-align:center;padding:30px 15px}
+.logo{font-size:48px}
+header h1{font-size:25px;margin:5px}
+header p{color:#f5d68d;margin:5px}
+nav{background:#10533e;text-align:center;padding:12px;position:sticky;top:0}
+nav a{color:white;text-decoration:none;margin:8px;font-size:14px}
+.hero{padding:45px 20px;text-align:center;background:#eaf1e9}
+.hero h2{color:#176b50;font-size:27px}
+.hero p{max-width:650px;margin:auto}
+.btn{display:inline-block;background:#d8ad52;color:#172c21;padding:11px 22px;border-radius:8px;text-decoration:none;font-weight:bold;margin:12px 5px}
+section{padding:30px 18px;max-width:950px;margin:auto}
+section h2{text-align:center;color:#176b50}
+.card{background:white;padding:20px;border-radius:12px;margin:14px 0;box-shadow:0 2px 12px #0000000d}
+.cards{display:grid;grid-template-columns:repeat(auto-fit,minmax(220px,1fr));gap:15px}
+.card h3{color:#a47a25}
+.contact{text-align:center}
+.contact a{display:inline-block;margin:7px}
+footer{background:#10533e;color:white;text-align:center;padding:22px}
+footer a{color:#f5d68d}
 </style>
+<script type="application/ld+json">
+{
+ "@context":"https://schema.org",
+ "@type":"NGO",
+ "name":"جمعية الأخوة والتسامح للعمل الخيري",
+ "telephone":"+962772335460",
+ "address":{
+  "@type":"PostalAddress",
+  "streetAddress":"جرش، الجبارات، شارع مخيم غزة الرئيسي",
+  "addressLocality":"جرش",
+  "addressCountry":"JO"
+ },
+ "url":"https://brotherhoodandtoleranceassocia-commits.github.io/brotherhood-tolerance/"
+}
+</script>
 </head>
 <body>
+
 <header>
-<h1>كود موقع جمعية الأخوة والتسامح للعمل الخيري</h1>
-<p>عارض ملوّن للقراءة والنسخ. يعرض ملف index.html الحالي من مستودع GitHub ولا يغيّر الموقع.</p>
+<div class="logo">🤝</div>
+<h1>جمعية الأخوة والتسامح للعمل الخيري</h1>
+<p>معًا نصنع الخير ونزرع الأمل</p>
 </header>
-<div class="actions">
-<button onclick="copyCode()">نسخ الكود كاملاً</button>
-<button onclick="loadCode()">إعادة تحميل الكود</button>
+
+<nav>
+<a href="#about">من نحن</a>
+<a href="#goals">أهدافنا</a>
+<a href="#campaign">حملاتنا</a>
+<a href="#contact">اتصل بنا</a>
+</nav>
+
+<div class="hero">
+<h2>أهل الخير والعطاء</h2>
+<p>نعمل بروح الأخوة والتسامح على خدمة المجتمع وتعزيز التكافل الاجتماعي ومساندة الأسر المحتاجة، إيمانًا منا بأن الخير مسؤولية مشتركة.</p>
+<a class="btn" href="#contact">تواصل معنا</a>
+<a class="btn" href="https://wa.me/962772335460">واتساب</a>
 </div>
-<div id="status">جارٍ تحميل ملف الموقع الأصلي...</div>
-<pre><code id="code"></code></pre>
-<script>
-const sourceURL="https://raw.githubusercontent.com/brotherhoodandtoleranceassocia-commits/brotherhood-tolerance/main/index.html";
-let source="";
-function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
-function highlight(s){
-  let out=esc(s);
-  out=out.replace(/(&lt;!--[\s\S]*?--&gt;)/g,'<span class="comment">$1</span>');
-  out=out.replace(/(&lt;\/?[a-zA-Z][\w:-]*)/g,'<span class="tag">$1</span>');
-  out=out.replace(/(\s[\w:-]+)(=)/g,'<span class="attr">$1</span>$2');
-  out=out.replace(/(&quot;.*?&quot;)/g,'<span class="str">$1</span>');
-  out=out.replace(/\b(const|let|var|function|return|if|else|new|true|false|null)\b/g,'<span class="kw">$1</span>');
-  return out;
-}
-async function loadCode(){
- const status=document.getElementById("status");
- status.textContent="جارٍ تحميل الكود...";
- try{
-  const r=await fetch(sourceURL,{cache:"no-store"});
-  if(!r.ok) throw new Error("HTTP "+r.status);
-  source=await r.text();
-  document.getElementById("code").innerHTML=highlight(source);
-  status.textContent="تم تحميل الكود الأصلي. عدد الأسطر: "+source.split("\n").length;
- }catch(e){status.textContent="تعذّر تحميل الكود. تأكد من اتصال الإنترنت ثم اضغط إعادة تحميل الكود.";}
-}
-async function copyCode(){
- if(!source){alert("انتظر حتى يتم تحميل الكود أولاً.");return;}
- try{await navigator.clipboard.writeText(source);alert("تم نسخ الكود كاملاً.");}
- catch(e){
-  const t=document.createElement("textarea");t.value=source;document.body.appendChild(t);t.select();
-  document.execCommand("copy");t.remove();alert("تم النسخ.");
- }
-}
-loadCode();
-</script>
+
+<section id="about">
+<h2>من نحن</h2>
+<div class="card">
+<p>جمعية الأخوة والتسامح للعمل الخيري جمعية تسعى إلى نشر قيم المحبة والتعاون والتسامح، وتقديم المبادرات الإنسانية والخيرية لخدمة المجتمع المحلي في محافظة جرش.</p>
+</div>
+</section>
+
+<section id="goals">
+<h2>أهداف الجمعية</h2>
+<div class="cards">
+<div class="card">
+<h3>🤝 التكافل الاجتماعي</h3>
+<p>مساندة الأسر المحتاجة وتعزيز التعاون بين أفراد المجتمع.</p>
+</div>
+<div class="card">
+<h3>❤️ العمل الإنساني</h3>
+<p>تنفيذ المبادرات والأنشطة الخيرية والإنسانية.</p>
+</div>
+<div class="card">
+<h3>🌱 تنمية المجتمع</h3>
+<p>المساهمة في خدمة المجتمع ونشر ثقافة التطوع والعطاء.</p>
+</div>
+</div>
+</section>
+
+<section id="campaign">
+<h2>حملاتنا ومبادراتنا</h2>
+<div class="card">
+<h3>❄️ حملة شتاء دافئ</h3>
+<p>مبادرة إنسانية تهدف إلى مساعدة الأسر المحتاجة وتوفير مستلزمات الشتاء للأسر المستفيدة.</p>
+</div>
+</section>
+
+<section id="contact" class="contact">
+<h2>تواصل معنا</h2>
+<div class="card">
+<p>📍 جرش، الجبارات، شارع مخيم غزة الرئيسي – الأردن</p>
+<p>📞 0772335460</p>
+<a class="btn" href="tel:0772335460">اتصال</a>
+<a class="btn" href="https://wa.me/962772335460">واتساب</a>
+<a class="btn" href="https://maps.app.goo.gl/ZNSveD3skg1FZjb37">موقع الجمعية</a>
+</div>
+<div class="card">
+<h3>تابعونا على مواقع التواصل</h3>
+<a href="https://www.facebook.com/share/1Jti8EWz6y/">فيسبوك</a>
+<a href="https://www.instagram.com/brotherhood.tolerance/">إنستغرام</a>
+<a href="https://youtube.com/@brotherhoodtolerance">يوتيوب</a>
+</div>
+</section>
+
+<footer>
+<p>جمعية الأخوة والتسامح للعمل الخيري</p>
+<p>معًا من أجل مجتمع متعاون ومتسامح</p>
+<p>جميع الحقوق محفوظة © 2026</p>
+</footer>
+
 </body>
 </html>
