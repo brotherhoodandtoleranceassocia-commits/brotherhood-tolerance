@@ -1,323 +1,67 @@
-
-<!DOCTYPE html>
+<!doctype html>
 <html lang="ar" dir="rtl">
 <head>
-<meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<meta name="description" content="جمعية الأخوة والتسامح للعمل الخيري - مبادرات إنسانية لدعم الأسر المحتاجة في الأردن.">
-<title>جمعية الأخوة والتسامح للعمل الخيري</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>عارض كود موقع جمعية الأخوة والتسامح</title>
 <style>
-:root {
-  --green:#176b50;
-  --dark:#123d32;
-  --gold:#e6b85c;
-  --light:#f4f8f5;
-  --text:#25352f;
-}
+:root{color-scheme:dark}
 *{box-sizing:border-box}
-body{
-  margin:0;
-  font-family:Tahoma,Arial,sans-serif;
-  background:var(--light);
-  color:var(--text);
-  line-height:1.9;
-}
-header{
-  background:linear-gradient(135deg,var(--dark),var(--green));
-  color:white;
-  text-align:center;
-  padding:45px 18px;
-}
-.logo{
-  width:90px;height:90px;
-  margin:auto auto 12px;
-  border:3px solid var(--gold);
-  border-radius:50%;
-  display:flex;align-items:center;justify-content:center;
-  font-size:43px;
-  background:#ffffff18;
-}
-header h1{margin:8px 0;font-size:29px}
-header p{margin:5px 0;color:#f4e8c9}
-nav{
-  background:white;
-  padding:12px;
-  text-align:center;
-  box-shadow:0 2px 8px #00000010;
-  position:sticky;top:0;z-index:5;
-}
-nav a{
-  color:var(--green);
-  text-decoration:none;
-  margin:0 9px;
-  font-weight:bold;
-  font-size:14px;
-}
-.container{max-width:1000px;margin:auto;padding:22px 15px}
-.section{
-  background:white;
-  margin:20px 0;
-  padding:25px;
-  border-radius:15px;
-  box-shadow:0 4px 18px #163d3210;
-}
-h2{color:var(--green);margin-top:0}
-.hero{
-  background:linear-gradient(135deg,#e5f2e9,#fff8e9);
-  text-align:center;
-  border:1px solid #d8e8dc;
-}
-.hero h2{font-size:26px}
-.campaign{
-  border:2px solid var(--gold);
-  background:#fffaf0;
-}
-.campaign-tag{
-  display:inline-block;
-  background:var(--gold);
-  color:#49340c;
-  padding:4px 14px;
-  border-radius:20px;
-  font-weight:bold;
-}
-.features{
-  display:grid;
-  grid-template-columns:repeat(auto-fit,minmax(200px,1fr));
-  gap:14px;
-}
-.feature{
-  background:#f5faf6;
-  border-radius:12px;
-  padding:17px;
-  border:1px solid #e0ece3;
-}
-.amounts{
-  display:grid;
-  grid-template-columns:repeat(3,1fr);
-  gap:10px;
-  margin:18px 0;
-}
-.amount{
-  border:2px solid #cbded1;
-  background:white;
-  padding:13px 5px;
-  border-radius:10px;
-  font-size:18px;
-  font-weight:bold;
-  color:var(--green);
-  cursor:pointer;
-}
-.amount.selected{
-  background:var(--green);
-  color:white;
-  border-color:var(--green);
-}
-button,.button{
-  display:inline-block;
-  border:0;
-  border-radius:9px;
-  padding:12px 20px;
-  background:var(--green);
-  color:white;
-  text-decoration:none;
-  font-size:16px;
-  font-weight:bold;
-  cursor:pointer;
-}
-button:hover,.button:hover{opacity:.9}
-.gold-button{background:#bd8b2c}
-.contact-line{
-  background:#f5faf6;
-  padding:12px;
-  border-radius:9px;
-  margin:10px 0;
-  overflow-wrap:anywhere;
-}
-.notice{
-  color:#70551d;
-  background:#fff4d8;
-  padding:12px;
-  border-radius:9px;
-  font-size:14px;
-}
-footer{
-  background:var(--dark);
-  color:white;
-  text-align:center;
-  padding:25px 15px;
-  margin-top:25px;
-}
-@media(max-width:500px){
-  header h1{font-size:23px}
-  nav a{display:inline-block;margin:4px;font-size:13px}
-  .amounts{grid-template-columns:repeat(2,1fr)}
-  .section{padding:19px}
-}
+body{margin:0;background:#101820;color:#e8eef2;font-family:Tahoma,Arial,sans-serif}
+header{padding:18px;background:#176b50;color:white}
+h1{font-size:20px;margin:0 0 8px}
+p{margin:6px 0;line-height:1.7}
+.actions{display:flex;gap:10px;flex-wrap:wrap;padding:14px}
+button{border:0;border-radius:8px;padding:11px 16px;background:#e6b85c;color:#17231e;font-weight:bold}
+#status{padding:0 14px;color:#c9d7df}
+pre{direction:ltr;text-align:left;white-space:pre;overflow:auto;margin:14px;padding:16px;background:#071018;border:1px solid #30424e;border-radius:10px;line-height:1.55;font:13px/1.55 Consolas,Monaco,monospace;tab-size:2}
+.tag{color:#ff8f8f}.attr{color:#ffd479}.str{color:#a8e6a1}.comment{color:#8296a5;font-style:italic}.kw{color:#d5a6ff}.plain{color:#e8eef2}
 </style>
 </head>
 <body>
-
 <header>
-  <div class="logo">🤝</div>
-  <h1>جمعية الأخوة والتسامح للعمل الخيري</h1>
-  <p>معاً نصنع الخير ونزرع الأمل</p>
-  <p>الأردن – جرش – الجبارات</p>
+<h1>كود موقع جمعية الأخوة والتسامح للعمل الخيري</h1>
+<p>عارض ملوّن للقراءة والنسخ. يعرض ملف index.html الحالي من مستودع GitHub ولا يغيّر الموقع.</p>
 </header>
-
-<nav>
-  <a href="#about">عن الجمعية</a>
-  <a href="#goals">أهدافنا</a>
-  <a href="#campaign">حملة الشتاء</a>
-  <a href="#donate">التبرعات</a>
-  <a href="#contact">اتصل بنا</a>
-</nav>
-
-<main class="container">
-
-<section class="section hero">
-  <h2>أهلاً بكم في جمعية الأخوة والتسامح</h2>
-  <p>
-    نعمل على تعزيز التكافل الاجتماعي ومساندة الأسر المحتاجة،
-    من خلال المبادرات الإنسانية والأنشطة الخيرية والتطوعية.
-    مساهمتكم تصنع فرقاً في حياة الآخرين.
-  </p>
-</section>
-
-<section class="section" id="about">
-  <h2>من نحن</h2>
-  <p>
-    جمعية الأخوة والتسامح للعمل الخيري تسعى إلى نشر قيم التعاون
-    والتراحم والتكافل بين أفراد المجتمع، وتقديم الدعم الإنساني
-    للأسر المحتاجة، وتنفيذ المبادرات التي تسهم في تحسين ظروفهم
-    المعيشية وتعزيز روح العمل التطوعي.
-  </p>
-</section>
-
-<section class="section" id="goals">
-  <h2>أهداف الجمعية</h2>
-  <div class="features">
-    <div class="feature">❤️ مساعدة الأسر الفقيرة والمحتاجة.</div>
-    <div class="feature">🧥 توفير الملابس والأغطية ومستلزمات الشتاء.</div>
-    <div class="feature">🍞 المساهمة في توفير الطرود الغذائية.</div>
-    <div class="feature">🤝 تشجيع العمل التطوعي والتكافل الاجتماعي.</div>
-    <div class="feature">🎒 دعم الأطفال والأسر حسب الإمكانات المتاحة.</div>
-    <div class="feature">🌱 إطلاق مبادرات إنسانية تخدم المجتمع.</div>
-  </div>
-</section>
-
-<section class="section campaign" id="campaign">
-  <span class="campaign-tag">حملة إنسانية</span>
-  <h2>🧥 حملة شتاء دافئ</h2>
-  <p>
-    في فصل الشتاء، هناك أسر وأطفال يحتاجون إلى من يقف بجانبهم.
-    نطلق حملة شتاء دافئ للمساهمة في توفير البطانيات والملابس
-    الشتوية ووسائل التدفئة الآمنة للأسر المحتاجة.
-  </p>
-  <p><strong>ساهم بما تستطيع، فكل مساهمة تصنع دفئاً وأملاً.</strong></p>
-  <a class="button gold-button" href="#donate">ساهم في الحملة</a>
-</section>
-
-<section class="section" id="donate">
-  <h2>💚 التبرع لحملة شتاء دافئ</h2>
-  <p>اختر مبلغ المساهمة الذي ترغب به:</p>
-
-  <div class="amounts">
-    <button class="amount selected" type="button" data-amount="10">10 دنانير</button>
-    <button class="amount" type="button" data-amount="20">20 ديناراً</button>
-    <button class="amount" type="button" data-amount="30">30 ديناراً</button>
-    <button class="amount" type="button" data-amount="40">40 ديناراً</button>
-    <button class="amount" type="button" data-amount="50">50 ديناراً</button>
-  </div>
-
-  <p id="chosen">المبلغ المختار: 10 دنانير</p>
-
-  <a id="whatsappDonate" class="button" target="_blank" rel="noopener"
-     href="https://wa.me/962772335460?text=%D8%A3%D8%B1%D8%BA%D8%A8%20%D8%A8%D8%A7%D9%84%D9%85%D8%B3%D8%A7%D9%87%D9%85%D8%A9%20%D9%81%D9%8A%20%D8%AD%D9%85%D9%84%D8%A9%20%D8%B4%D8%AA%D8%A7%D8%A1%20%D8%AF%D8%A7%D9%81%D8%A6%20%D8%A8%D9%85%D8%A8%D9%84%D8%BA%2010%20%D8%AF%D9%86%D8%A7%D9%86%D9%8A%D8%B1">
-    تأكيد المساهمة عبر واتساب
-  </a>
-
-  <p class="notice">
-    هذا الزر يفتح محادثة واتساب مع رئيس الجمعية لتنسيق التبرع.
-    لا يتم خصم أي مبلغ أو تنفيذ دفع إلكتروني من خلال الموقع.
-  </p>
-
-  <div class="contact-line">
-    <strong>الحساب البنكي للتبرعات:</strong><br>
-    <span id="iban">JO82JIBA0740002192879410400002</span>
-    <br>
-    <button type="button" onclick="copyIBAN()">نسخ رقم الحساب</button>
-    <span id="copyMessage"></span>
-  </div>
-</section>
-
-<section class="section" id="contact">
-  <h2>📞 تواصل معنا</h2>
-  <div class="contact-line">
-    <strong>رئيس الجمعية:</strong>
-    <a href="tel:0772335460">0772335460</a>
-    <br>
-    <a class="button" href="https://wa.me/962772335460" target="_blank" rel="noopener">واتساب رئيس الجمعية</a>
-  </div>
-
-  <div class="contact-line">
-    <strong>متطوع في الجمعية:</strong>
-    <a href="tel:0789968004">0789968004</a>
-    <br>
-    <a class="button" href="https://wa.me/962789968004" target="_blank" rel="noopener">واتساب المتطوع</a>
-  </div>
-
-  <div class="contact-line">
-    <strong>العنوان:</strong> الأردن – جرش – الجبارات.
-  </div>
-</section>
-
-</main>
-
-<footer>
-  <p>جمعية الأخوة والتسامح للعمل الخيري</p>
-  <p>معاً من أجل مجتمع متعاون وأكثر إنسانية ❤️</p>
-  <p>جميع الحقوق محفوظة © 2026</p>
-</footer>
-
+<div class="actions">
+<button onclick="copyCode()">نسخ الكود كاملاً</button>
+<button onclick="loadCode()">إعادة تحميل الكود</button>
+</div>
+<div id="status">جارٍ تحميل ملف الموقع الأصلي...</div>
+<pre><code id="code"></code></pre>
 <script>
-let selectedAmount = 10;
-
-document.querySelectorAll(".amount").forEach(button => {
-  button.addEventListener("click", function () {
-    selectedAmount = Number(this.dataset.amount);
-
-    document.querySelectorAll(".amount").forEach(item => {
-      item.classList.remove("selected");
-    });
-
-    this.classList.add("selected");
-    document.getElementById("chosen").textContent =
-      "المبلغ المختار: " + selectedAmount + " ديناراً";
-
-    const message =
-      "أرغب بالمساهمة في حملة شتاء دافئ بمبلغ " +
-      selectedAmount + " ديناراً. يرجى تزويدي بطريقة التبرع.";
-
-    document.getElementById("whatsappDonate").href =
-      "https://wa.me/962772335460?text=" + encodeURIComponent(message);
-  });
-});
-
-function copyIBAN() {
-  const iban = document.getElementById("iban").textContent;
-  if (navigator.clipboard && window.isSecureContext) {
-    navigator.clipboard.writeText(iban).then(() => {
-      document.getElementById("copyMessage").textContent = " تم النسخ بنجاح";
-    }).catch(() => {
-      document.getElementById("copyMessage").textContent =
-        " يرجى نسخ الرقم يدوياً: " + iban;
-    });
-  } else {
-    document.getElementById("copyMessage").textContent =
-      " انسخ الرقم يدوياً: " + iban;
-  }
+const sourceURL="https://raw.githubusercontent.com/brotherhoodandtoleranceassocia-commits/brotherhood-tolerance/main/index.html";
+let source="";
+function esc(s){return s.replace(/&/g,"&amp;").replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;");}
+function highlight(s){
+  let out=esc(s);
+  out=out.replace(/(&lt;!--[\s\S]*?--&gt;)/g,'<span class="comment">$1</span>');
+  out=out.replace(/(&lt;\/?[a-zA-Z][\w:-]*)/g,'<span class="tag">$1</span>');
+  out=out.replace(/(\s[\w:-]+)(=)/g,'<span class="attr">$1</span>$2');
+  out=out.replace(/(&quot;.*?&quot;)/g,'<span class="str">$1</span>');
+  out=out.replace(/\b(const|let|var|function|return|if|else|new|true|false|null)\b/g,'<span class="kw">$1</span>');
+  return out;
 }
+async function loadCode(){
+ const status=document.getElementById("status");
+ status.textContent="جارٍ تحميل الكود...";
+ try{
+  const r=await fetch(sourceURL,{cache:"no-store"});
+  if(!r.ok) throw new Error("HTTP "+r.status);
+  source=await r.text();
+  document.getElementById("code").innerHTML=highlight(source);
+  status.textContent="تم تحميل الكود الأصلي. عدد الأسطر: "+source.split("\n").length;
+ }catch(e){status.textContent="تعذّر تحميل الكود. تأكد من اتصال الإنترنت ثم اضغط إعادة تحميل الكود.";}
+}
+async function copyCode(){
+ if(!source){alert("انتظر حتى يتم تحميل الكود أولاً.");return;}
+ try{await navigator.clipboard.writeText(source);alert("تم نسخ الكود كاملاً.");}
+ catch(e){
+  const t=document.createElement("textarea");t.value=source;document.body.appendChild(t);t.select();
+  document.execCommand("copy");t.remove();alert("تم النسخ.");
+ }
+}
+loadCode();
 </script>
-
 </body>
 </html>
